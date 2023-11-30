@@ -6,7 +6,7 @@ parameters:
 
     preview_catalog: "on"
     catalog: "{write_env}"
-    database: "nn_demo_features_{entity}_global"
+    database: "fs_demo_features_{entity}_global"
 
     features:
       latest_table: "features_latest"
