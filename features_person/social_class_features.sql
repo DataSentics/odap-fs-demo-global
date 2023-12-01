@@ -17,7 +17,7 @@ select
     when salary <  93000 then "middle"
     else "upper"
   end as social_status
-from dev.odap_demo_nn.people
+from fs_demo_data.people
 
 -- COMMAND ----------
 

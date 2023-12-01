@@ -4,8 +4,7 @@ parameters:
       - path: "./features_station"
         prefix: "local"
 
-    preview_catalog: "on"
-    catalog: "{write_env}"
+    catalog: "hive_metastore"
     database: "fs_demo_features_{entity}_global"
 
     features:
