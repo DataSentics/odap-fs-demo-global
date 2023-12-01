@@ -1,5 +1,25 @@
 # Databricks notebook source
+# MAGIC %md
+# MAGIC
+# MAGIC # Feature Orchestration
+
+# COMMAND ----------
+
 # MAGIC %run ../init/odap
+
+# COMMAND ----------
+
+from odap.feature_factory.imports import (
+    create_notebooks_widget,
+    orchestrate,
+    calculate_latest_table,
+)
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC
+# MAGIC ## Widgets
 
 # COMMAND ----------
 
@@ -8,9 +28,12 @@
 
 # COMMAND ----------
 
-from odap.feature_factory.widgets import create_notebooks_widget
-
 create_notebooks_widget()
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC ### Orchestrate
 
 # COMMAND ----------
 
@@ -20,7 +43,9 @@ orchestrate()
 
 # COMMAND ----------
 
-# Uncomment if you want to use latest snapshot table and have filled the ids.table configuration in config.yaml
-# from odap.feature_factory.orchestrate import calculate_latest_table
+# MAGIC %md
+# MAGIC ### Calculate latest features cache
 
-# calculate_latest_table()
+# COMMAND ----------
+
+calculate_latest_table()
